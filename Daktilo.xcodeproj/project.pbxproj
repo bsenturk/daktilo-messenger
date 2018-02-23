@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB305E3148DAD15A8BEDF096 /* Pods_Daktilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC52F560DCB5BE77063D11D /* Pods_Daktilo.framework */; };
+		FA12D3081F7F82FA001F23CB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3071F7F82FA001F23CB /* CustomTextField.swift */; };
+		FA16A7B71F756BC40047A22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16A7B61F756BC40047A22D /* AppDelegate.swift */; };
+		FA16A7B91F756BC40047A22D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16A7B81F756BC40047A22D /* LoginController.swift */; };
+		FA16A7BC1F756BC40047A22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA16A7BA1F756BC40047A22D /* Main.storyboard */; };
+		FA16A7BE1F756BC40047A22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA16A7BD1F756BC40047A22D /* Assets.xcassets */; };
+		FA16A7C11F756BC40047A22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA16A7BF1F756BC40047A22D /* LaunchScreen.storyboard */; };
+		FA16A7CB1F7572C40047A22D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16A7CA1F7572C40047A22D /* Extensions.swift */; };
+		FA16A7CE1F76A21C0047A22D /* Manksa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA16A7CC1F769C700047A22D /* Manksa.ttf */; };
+		FA16A7D01F76ABD40047A22D /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16A7CF1F76ABD40047A22D /* SignUpController.swift */; };
+		FA17D42C1FA0B475005B9047 /* LookProfileImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA17D42B1FA0B475005B9047 /* LookProfileImageController.swift */; };
+		FA1F9F9F1F7D22F9005C1C77 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F9F9E1F7D22F9005C1C77 /* ChangePasswordController.swift */; };
+		FA20BE811F9BA485008890C8 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20BE801F9BA485008890C8 /* ChatMessageCell.swift */; };
+		FA3180201F8F61A400181666 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31801F1F8F61A400181666 /* UserSearchCell.swift */; };
+		FA3180221F8F6DDB00181666 /* UserWithUid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3180211F8F6DDB00181666 /* UserWithUid.swift */; };
+		FA3180261F8FAD8800181666 /* FriendRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3180251F8FAD8800181666 /* FriendRequestsController.swift */; };
+		FA3180281F8FB0CC00181666 /* FriendRequestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3180271F8FB0CC00181666 /* FriendRequestsCell.swift */; };
+		FA3652211F80F36500E360DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3652201F80F36500E360DC /* User.swift */; };
+		FA3652231F8274FD00E360DC /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3652221F8274FD00E360DC /* UserSearchController.swift */; };
+		FA3652251F84FDD800E360DC /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3652241F84FDD800E360DC /* ContactsCell.swift */; };
+		FA3652271F850BA600E360DC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3652261F850BA600E360DC /* CustomImageView.swift */; };
+		FA7967901F7BE8A9002CD35B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3C58E31F7BE2B7008EC283 /* GoogleService-Info.plist */; };
+		FA7967921F7BFA8B002CD35B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7967911F7BFA8B002CD35B /* MainTabBarController.swift */; };
+		FA7967951F7C0317002CD35B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7967941F7C0317002CD35B /* SettingsController.swift */; };
+		FAE954FD1F7C16DF00E1E067 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE954FC1F7C16DF00E1E067 /* ContactsController.swift */; };
+		FAE955001F7C171200E1E067 /* ChatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE954FF1F7C171200E1E067 /* ChatsController.swift */; };
+		FAEB0FE11F88F8CD009DDAD9 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB0FE01F88F8CD009DDAD9 /* ChatLogController.swift */; };
+		FAF3FEAD1F97A32100DFB44A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3FEAC1F97A32100DFB44A /* Message.swift */; };
+		FAF3FEAF1F97BD0900DFB44A /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3FEAE1F97BD0900DFB44A /* ChatCell.swift */; };
+		FAFEA5641F865E9E0008731F /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEA5631F865E9E0008731F /* ForgetPasswordController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F232A0752EED101275482E5 /* Pods-Daktilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daktilo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daktilo/Pods-Daktilo.release.xcconfig"; sourceTree = "<group>"; };
+		519271D60F100CF8B478FC55 /* Pods-Daktilo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daktilo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daktilo/Pods-Daktilo.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC52F560DCB5BE77063D11D /* Pods_Daktilo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daktilo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA12D3071F7F82FA001F23CB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FA16A7B31F756BC40047A22D /* Daktilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daktilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA16A7B61F756BC40047A22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA16A7B81F756BC40047A22D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FA16A7BB1F756BC40047A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA16A7BD1F756BC40047A22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA16A7C01F756BC40047A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA16A7C21F756BC40047A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA16A7CA1F7572C40047A22D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA16A7CC1F769C700047A22D /* Manksa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Manksa.ttf; sourceTree = "<group>"; };
+		FA16A7CF1F76ABD40047A22D /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		FA17D42B1FA0B475005B9047 /* LookProfileImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookProfileImageController.swift; sourceTree = "<group>"; };
+		FA1F9F9E1F7D22F9005C1C77 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		FA20BE801F9BA485008890C8 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		FA31801F1F8F61A400181666 /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
+		FA3180211F8F6DDB00181666 /* UserWithUid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWithUid.swift; sourceTree = "<group>"; };
+		FA3180251F8FAD8800181666 /* FriendRequestsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsController.swift; sourceTree = "<group>"; };
+		FA3180271F8FB0CC00181666 /* FriendRequestsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsCell.swift; sourceTree = "<group>"; };
+		FA3652201F80F36500E360DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA3652221F8274FD00E360DC /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
+		FA3652241F84FDD800E360DC /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		FA3652261F850BA600E360DC /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		FA3C58E31F7BE2B7008EC283 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA7967911F7BFA8B002CD35B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FA7967941F7C0317002CD35B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		FAE954FC1F7C16DF00E1E067 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		FAE954FF1F7C171200E1E067 /* ChatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsController.swift; sourceTree = "<group>"; };
+		FAEB0FE01F88F8CD009DDAD9 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		FAF3FEAC1F97A32100DFB44A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FAF3FEAE1F97BD0900DFB44A /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		FAFEA5631F865E9E0008731F /* ForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA16A7B01F756BC40047A22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB305E3148DAD15A8BEDF096 /* Pods_Daktilo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2649DA95CB00047019EDD6FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				519271D60F100CF8B478FC55 /* Pods-Daktilo.debug.xcconfig */,
+				0F232A0752EED101275482E5 /* Pods-Daktilo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82A6731B911A2CDA0E18DBB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC52F560DCB5BE77063D11D /* Pods_Daktilo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA12D3091F8063C0001F23CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3652201F80F36500E360DC /* User.swift */,
+				FA3180211F8F6DDB00181666 /* UserWithUid.swift */,
+				FAF3FEAC1F97A32100DFB44A /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA16A7AA1F756BC40047A22D = {
+			isa = PBXGroup;
+			children = (
+				FA16A7B51F756BC40047A22D /* Daktilo */,
+				FA16A7B41F756BC40047A22D /* Products */,
+				2649DA95CB00047019EDD6FA /* Pods */,
+				82A6731B911A2CDA0E18DBB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA16A7B41F756BC40047A22D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA16A7B31F756BC40047A22D /* Daktilo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA16A7B51F756BC40047A22D /* Daktilo */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB0FDF1F88F8A5009DDAD9 /* ChatLog */,
+				FA12D3091F8063C0001F23CB /* Model */,
+				FAE954FE1F7C16FC00E1E067 /* Chats */,
+				FAE954FB1F7C16BD00E1E067 /* Contacts */,
+				FA7967931F7C0309002CD35B /* Settings */,
+				FA16A7CD1F76A0540047A22D /* Font */,
+				FA16A7C91F7572B60047A22D /* Extensions */,
+				FA16A7C81F7571980047A22D /* Login */,
+				FA16A7B61F756BC40047A22D /* AppDelegate.swift */,
+				FA7967911F7BFA8B002CD35B /* MainTabBarController.swift */,
+				FA16A7BA1F756BC40047A22D /* Main.storyboard */,
+				FA16A7BD1F756BC40047A22D /* Assets.xcassets */,
+				FA16A7BF1F756BC40047A22D /* LaunchScreen.storyboard */,
+				FA16A7C21F756BC40047A22D /* Info.plist */,
+				FA3C58E31F7BE2B7008EC283 /* GoogleService-Info.plist */,
+			);
+			path = Daktilo;
+			sourceTree = "<group>";
+		};
+		FA16A7C81F7571980047A22D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA16A7B81F756BC40047A22D /* LoginController.swift */,
+				FA16A7CF1F76ABD40047A22D /* SignUpController.swift */,
+				FAFEA5631F865E9E0008731F /* ForgetPasswordController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA16A7C91F7572B60047A22D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA16A7CA1F7572C40047A22D /* Extensions.swift */,
+				FA12D3071F7F82FA001F23CB /* CustomTextField.swift */,
+				FA3652261F850BA600E360DC /* CustomImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA16A7CD1F76A0540047A22D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FA16A7CC1F769C700047A22D /* Manksa.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FA7967931F7C0309002CD35B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA7967941F7C0317002CD35B /* SettingsController.swift */,
+				FA1F9F9E1F7D22F9005C1C77 /* ChangePasswordController.swift */,
+				FA3180251F8FAD8800181666 /* FriendRequestsController.swift */,
+				FA3180271F8FB0CC00181666 /* FriendRequestsCell.swift */,
+				FA17D42B1FA0B475005B9047 /* LookProfileImageController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FAE954FB1F7C16BD00E1E067 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				FAE954FC1F7C16DF00E1E067 /* ContactsController.swift */,
+				FA3652221F8274FD00E360DC /* UserSearchController.swift */,
+				FA3652241F84FDD800E360DC /* ContactsCell.swift */,
+				FA31801F1F8F61A400181666 /* UserSearchCell.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		FAE954FE1F7C16FC00E1E067 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				FAE954FF1F7C171200E1E067 /* ChatsController.swift */,
+				FAF3FEAE1F97BD0900DFB44A /* ChatCell.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		FAEB0FDF1F88F8A5009DDAD9 /* ChatLog */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB0FE01F88F8CD009DDAD9 /* ChatLogController.swift */,
+				FA20BE801F9BA485008890C8 /* ChatMessageCell.swift */,
+			);
+			path = ChatLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA16A7B21F756BC40047A22D /* Daktilo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA16A7C51F756BC40047A22D /* Build configuration list for PBXNativeTarget "Daktilo" */;
+			buildPhases = (
+				932873C6AB0B31791F3C619A /* [CP] Check Pods Manifest.lock */,
+				FA16A7AF1F756BC40047A22D /* Sources */,
+				FA16A7B01F756BC40047A22D /* Frameworks */,
+				FA16A7B11F756BC40047A22D /* Resources */,
+				3F42BEFFB94E980ED7E668B1 /* [CP] Embed Pods Frameworks */,
+				C763EFD28F8259A9654BC1AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Daktilo;
+			productName = Daktilo;
+			productReference = FA16A7B31F756BC40047A22D /* Daktilo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA16A7AB1F756BC40047A22D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Burak Şentürk";
+				TargetAttributes = {
+					FA16A7B21F756BC40047A22D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA16A7AE1F756BC40047A22D /* Build configuration list for PBXProject "Daktilo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA16A7AA1F756BC40047A22D;
+			productRefGroup = FA16A7B41F756BC40047A22D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA16A7B21F756BC40047A22D /* Daktilo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA16A7B11F756BC40047A22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16A7C11F756BC40047A22D /* LaunchScreen.storyboard in Resources */,
+				FA16A7CE1F76A21C0047A22D /* Manksa.ttf in Resources */,
+				FA7967901F7BE8A9002CD35B /* GoogleService-Info.plist in Resources */,
+				FA16A7BE1F756BC40047A22D /* Assets.xcassets in Resources */,
+				FA16A7BC1F756BC40047A22D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F42BEFFB94E980ED7E668B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Daktilo/Pods-Daktilo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daktilo/Pods-Daktilo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		932873C6AB0B31791F3C619A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daktilo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C763EFD28F8259A9654BC1AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daktilo/Pods-Daktilo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA16A7AF1F756BC40047A22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE954FD1F7C16DF00E1E067 /* ContactsController.swift in Sources */,
+				FA12D3081F7F82FA001F23CB /* CustomTextField.swift in Sources */,
+				FA3652251F84FDD800E360DC /* ContactsCell.swift in Sources */,
+				FA3652271F850BA600E360DC /* CustomImageView.swift in Sources */,
+				FA7967951F7C0317002CD35B /* SettingsController.swift in Sources */,
+				FA16A7B91F756BC40047A22D /* LoginController.swift in Sources */,
+				FA16A7CB1F7572C40047A22D /* Extensions.swift in Sources */,
+				FA7967921F7BFA8B002CD35B /* MainTabBarController.swift in Sources */,
+				FA17D42C1FA0B475005B9047 /* LookProfileImageController.swift in Sources */,
+				FAEB0FE11F88F8CD009DDAD9 /* ChatLogController.swift in Sources */,
+				FAF3FEAF1F97BD0900DFB44A /* ChatCell.swift in Sources */,
+				FA1F9F9F1F7D22F9005C1C77 /* ChangePasswordController.swift in Sources */,
+				FA16A7B71F756BC40047A22D /* AppDelegate.swift in Sources */,
+				FA3180281F8FB0CC00181666 /* FriendRequestsCell.swift in Sources */,
+				FAFEA5641F865E9E0008731F /* ForgetPasswordController.swift in Sources */,
+				FA16A7D01F76ABD40047A22D /* SignUpController.swift in Sources */,
+				FAE955001F7C171200E1E067 /* ChatsController.swift in Sources */,
+				FA3180201F8F61A400181666 /* UserSearchCell.swift in Sources */,
+				FAF3FEAD1F97A32100DFB44A /* Message.swift in Sources */,
+				FA20BE811F9BA485008890C8 /* ChatMessageCell.swift in Sources */,
+				FA3180261F8FAD8800181666 /* FriendRequestsController.swift in Sources */,
+				FA3180221F8F6DDB00181666 /* UserWithUid.swift in Sources */,
+				FA3652231F8274FD00E360DC /* UserSearchController.swift in Sources */,
+				FA3652211F80F36500E360DC /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA16A7BA1F756BC40047A22D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA16A7BB1F756BC40047A22D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA16A7BF1F756BC40047A22D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA16A7C01F756BC40047A22D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA16A7C31F756BC40047A22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA16A7C41F756BC40047A22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA16A7C61F756BC40047A22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519271D60F100CF8B478FC55 /* Pods-Daktilo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADPP457ME6;
+				INFOPLIST_FILE = Daktilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeWithBurak.Daktilo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA16A7C71F756BC40047A22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F232A0752EED101275482E5 /* Pods-Daktilo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADPP457ME6;
+				INFOPLIST_FILE = Daktilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeWithBurak.Daktilo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA16A7AE1F756BC40047A22D /* Build configuration list for PBXProject "Daktilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16A7C31F756BC40047A22D /* Debug */,
+				FA16A7C41F756BC40047A22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA16A7C51F756BC40047A22D /* Build configuration list for PBXNativeTarget "Daktilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16A7C61F756BC40047A22D /* Debug */,
+				FA16A7C71F756BC40047A22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA16A7AB1F756BC40047A22D /* Project object */;
+}
